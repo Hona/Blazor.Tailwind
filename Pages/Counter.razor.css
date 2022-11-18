@@ -1,0 +1,12 @@
+button {
+    border-radius: 0.75rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+    padding: 2rem
+}
+@media (prefers-color-scheme: dark) {
+    button {
+        --tw-bg-opacity: 1;
+        background-color: rgb(30 41 59 / var(--tw-bg-opacity))
+    }
+}

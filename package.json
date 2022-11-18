@@ -3,10 +3,11 @@
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.19",
     "postcss-cli": "^10.0.0",
-    "tailwindcss": "^3.2.4"
+    "tailwindcss": "^3.2.4",
+    "glob": "^8.0.3"
   },
-    "scripts": {
-      "build:scoped-css": "postcss \"**/*.razor.scss\" --base --replace --ext .css",
-      "build:css": "postcss wwwroot/css/app.scss -o wwwroot/css/app.min.css"
-    }
+  "scripts": {
+    "build:scoped-css": "node build-scoped-css.js",
+    "build:css": "postcss wwwroot/css/app.scss -o wwwroot/css/app.min.css"
+  }
 }
