@@ -18,10 +18,18 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '7.0.x'
+          
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          
+      
 
       # Publishes the Blazor project to the release folder
       - name: Publish .NET Core Project
         run: dotnet publish Blazor.Tailwind.csproj -c Release -o release
+        
+      - run: npm install
 
       # Changes the base tag in index.html from ‘/’ to ‘Blazor.Tailwind’ to match the GitHub Pages repository subdirectory
       - name: Change base-tag in index.html from / to Blazor.Tailwind
