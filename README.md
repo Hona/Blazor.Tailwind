@@ -1,5 +1,7 @@
 # Blazor.Tailwind
 
+> [Demo Website](https://hona.github.io/Blazor.Tailwind/)
+
 > A demo project showing scoped CSS using Tailwind as well as global CSS
 
 ---
